@@ -1,0 +1,81 @@
+/* Main Content Styles */
+.content {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 30px 40px;
+    overflow-y: auto;
+}
+
+/* Header Notifikasi */
+.notifikasi-header {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.notifikasi-header h1 {
+    font-size: 32px;
+    color: #6A1B9A;
+    margin-bottom: 5px;
+}
+
+.notifikasi-header p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Notifications List */
+.notifications-list {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+#notifications {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.notification-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    transition: background 0.3s ease;
+}
+
+.notification-item:last-child {
+    border-bottom: none;
+}
+
+.notification-item:hover {
+    background: #f4f4f4;
+}
+
+.notification-date {
+    font-size: 14px;
+    color: #888;
+}
+
+.notification-item p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .content {
+        padding: 20px;
+    }
+
+    .notifikasi-header h1 {
+        font-size: 28px;
+    }
+
+    .notification-item p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,157 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.content {
+    flex: 1;
+    padding: 30px;
+    background: #f9f9f9;
+    overflow-y: auto;
+}
+
+/* Header Kelompok */
+.group-header {
+    background: #6A1B9A;
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.group-header h1 {
+    font-size: 2.5rem;
+}
+
+.group-header p {
+    font-size: 1rem;
+    color: #ddd;
+    margin-top: 10px;
+}
+
+/* Form Randomizer */
+.randomizer {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.randomizer h2 {
+    font-size: 2rem;
+    color: #6A1B9A;
+    margin-bottom: 20px;
+}
+
+.randomizer form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.randomizer label {
+    font-size: 1rem;
+    color: #555;
+}
+
+.randomizer select, 
+.randomizer input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.randomize-btn {
+    background: #6A1B9A;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.randomize-btn:hover {
+    background: #8D44AD;
+}
+
+/* Daftar Kelompok */
+.group-list {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.group-list h2 {
+    font-size: 2rem;
+    color: #6A1B9A;
+    margin-bottom: 20px;
+}
+
+.group-list ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.group-item {
+    background: #f1f1f1;
+    padding: 15px 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.group-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.group-item ul {
+    list-style: circle;
+    padding-left: 20px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .group-header h1 {
+        font-size: 2rem;
+    }
+
+    .randomizer h2, 
+    .group-list h2 {
+        font-size: 1.8rem;
+    }
+
+    .randomizer form {
+        gap: 15px;
+    }
+
+    .group-item h3 {
+        font-size: 1rem;
+    }
+
+    .group-item ul {
+        font-size: 0.8rem;
+    }
+}

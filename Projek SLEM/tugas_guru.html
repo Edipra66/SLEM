@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Guru - SLEM</title>
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/tugas_guru.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">SLEM</div>
+            <ul class="nav-list">
+                <li><a href="dashboard_guru.html">Beranda</a></li>
+                <li><a href="notifikasi_guru.html">Notifikasi</a></li>
+                <li><a href="tugas_guru.html" class="active">Tugas</a></li>
+                <li><a href="kelompok_guru.html">Kelompok</a></li>
+                <li><a href="kelas_guru.html">Kelas</a></li>
+                <li><a href="profil_guru.html">Profil</a></li>
+            </ul>
+            <button id="sign-out" class="sign-out-btn">Keluar</button>
+        </aside>
+
+        <!-- Konten Utama -->
+        <main class="content">
+            <header class="task-header">
+                <h1>Tugas Guru</h1>
+                <p>Kelola tugas Anda dan buat tugas baru untuk siswa.</p>
+                <button id="create-task-btn" class="create-task-btn">Buat Tugas Baru</button>
+            </header>
+
+            <!-- Daftar Tugas -->
+            <section class="task-list" id="task-list">
+                <h2>Daftar Tugas</h2>
+                <ul id="task-items">
+                    <!-- Tugas akan dimuat secara dinamis -->
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/tugas_guru.js"></script>
+</body>
+</html>
