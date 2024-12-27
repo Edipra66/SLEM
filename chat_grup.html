@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrolan Grup - SLEM</title>
+    <link rel="stylesheet" href="css/chat_grup.css">
+</head>
+<body>
+    <div class="chat-container">
+        <aside class="chat-sidebar">
+            <div class="logo">SLEM</div>
+            <ul class="nav-list">
+                <li><a href="dashboard_siswa.html">Beranda</a></li>
+                <li><a href="kelompok.html" class="active">Kelompok</a></li>
+            </ul>
+            <div class="upload-task">
+                <h3>Unggah Tugas</h3>
+                <form id="form-upload">
+                    <input type="file" id="file-input" accept=".pdf,.doc,.docx,.xlsx,.ppt,.pptx,.zip,.jpg,.png,.txt" />
+                    <button type="submit" class="upload-btn">Unggah</button>
+                </form>
+            </div>
+        </aside>
+
+        <main class="chat-content">
+            <header class="chat-header">
+                <h1 id="nama-grup">Nama Grup</h1>
+                <p id="deskripsi-grup">Deskripsi Grup</p>
+            </header>
+
+            <section id="chat-content" class="chat-content">
+                <header class="chat-header">
+                    <h1 id="nama-grup">Nama Grup</h1>
+                    <p id="deskripsi-grup">Deskripsi Grup</p>
+                    <h3>Anggota Grup:</h3>
+                    <ul id="member-list"></ul>
+                </header>
+
+            <section id="chat-area" class="chat-area">
+                <!-- Pesan akan dimuat di sini -->
+            </section>
+
+            <form id="form-chat" class="chat-form">
+                <input type="text" id="input-pesan" placeholder="Tulis pesan..." required>
+                <button type="submit" class="chat-btn">Kirim</button>
+            </form>
+
+            <form id="form-upload" class="upload-form" style="display: none;">
+                <label for="file-input">Pilih File Tugas:</label>
+                <input type="file" id="file-input" required>
+                <button type="submit" class="upload-btn">Unggah</button>
+            </form>
+        </main>
+    </div>
+
+    <script src="js/chat_grup.js"></script>
+</body>
+</html>

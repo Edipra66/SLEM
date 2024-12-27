@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelompok - SLEM</title>
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/kelompok.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">SLEM</div>
+            <ul class="nav-list">
+                <li><a href="dashboard_siswa.html">Beranda</a></li>
+                <li><a href="notifikasi.html">Notifikasi</a></li>
+                <li><a href="tugas.html">Tugas</a></li>
+                <li><a href="kelompok.html" class="active">Kelompok</a></li>
+                <li><a href="kelas_siswa.html">Kelas</a></li>
+                <li><a href="pencapaian.html">Pencapaian</a></li>
+                <li><a href="profil.html">Profil</a></li>
+            </ul>
+            <button id="sign-out" class="sign-out-btn">Keluar</button>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <header class="kelompok-header">
+                <h1>Kelompok Diskusi</h1>
+                <p>Berikut adalah kelompok diskusi Anda.</p>
+            </header>
+
+            <section class="groups-list" id="groups-list">
+                <!-- Daftar Kelompok akan dimuat secara dinamis di sini -->
+                <div class="group-item">
+                    <h3>Kelompok 1 - IPA</h3>
+                    <p>Diskusi tentang ekosistem dan lingkungan hidup.</p>
+                    <a href="#" class="btn-view-group">Masuk ke Grup</a>
+                </div>
+
+                <div class="group-item">
+                    <h3>Kelompok 2 - Matematika</h3>
+                    <p>Diskusi tentang persamaan kuadrat dan fungsi linear.</p>
+                    <a href="#" class="btn-view-group">Masuk ke Grup</a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/kelompok.js"></script>
+    <script src="js/global.js"></script>
+</body>
+</html>

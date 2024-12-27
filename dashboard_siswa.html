@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Siswa - SLEM</title>
+    <link rel="stylesheet" href="css/dashboard_siswa.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">SLEM</div>
+            <ul class="nav-list">
+                <li><a href="dashboard_siswa.html" class="active">Beranda</a></li>
+                <li><a href="notifikasi.html">Notifikasi</a></li>
+                <li><a href="tugas.html">Tugas</a></li>
+                <li><a href="kelompok.html">Kelompok</a></li>
+                <li><a href="kelas_siswa.html">Kelas</a></li>
+                <li><a href="pencapaian.html">Pencapaian</a></li>
+                <li><a href="profil.html">Profil</a></li>
+            </ul>
+            <button id="sign-out" class="sign-out-btn">Keluar</button>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <header class="dashboard-header">
+                <h1>Selamat Datang, <span id="student-name">Siswa</span>!</h1>
+                <p>Sekolah: <span id="school-name">Nama Sekolah</span></p>
+            </header>
+
+            <!-- Notification Bar -->
+            <div class="notification-bar">
+                <p>Anda memiliki tugas baru yang harus diselesaikan!</p>
+                <a href="notifikasi.html">Lihat Semua Notifikasi</a>
+            </div>
+
+            <section class="overview">
+                <div class="profile-summary">
+                    <img src="assets/images/pfp.png" alt="Foto Profil" class="profile-pic">
+                    <div class="student-info">
+                        <h2 id="student-fullname">Nama Lengkap</h2>
+                        <p class="school-info">Kelas: <span id="class-code">Kode Kelas</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features-grid">
+                <div class="feature-item">
+                    <a href="tugas.html" class="feature-link">
+                        <img src="assets/images/Tugas.png" alt="Tugas" class="feature-icon">
+                        <span>Tugas</span>
+                    </a>
+                </div>
+
+                <div class="feature-item">
+                    <a href="kelompok.html" class="feature-link">
+                        <img src="assets/images/Kelompok.png" alt="Kelompok" class="feature-icon">
+                        <span>Kelompok</span>
+                    </a>
+                </div>
+
+                <div class="feature-item">
+                    <a href="kelas_siswa.html" class="feature-link">
+                        <img src="assets/images/Kelas.png" alt="Kelas" class="feature-icon">
+                        <span>Kelas</span>
+                    </a>
+                </div>
+
+                <div class="feature-item">
+                    <a href="pencapaian.html" class="feature-link">
+                        <img src="assets/images/Pencapaian.png" alt="Pencapaian" class="feature-icon">
+                        <span>Pencapaian</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/dashboard_siswa.js"></script>
+    <script src="js/global.js"></script>
+</body>
+</html>

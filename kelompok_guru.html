@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelompok Guru - SLEM</title>
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/kelompok_guru.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">SLEM</div>
+            <ul class="nav-list">
+                <li><a href="dashboard_guru.html">Beranda</a></li>
+                <li><a href="notifikasi_guru.html">Notifikasi</a></li>
+                <li><a href="tugas_guru.html">Tugas</a></li>
+                <li><a href="kelompok_guru.html" class="active">Kelompok</a></li>
+                <li><a href="kelas_guru.html">Kelas</a></li>
+                <li><a href="profil_guru.html">Profil</a></li>
+            </ul>
+            <button id="sign-out" class="sign-out-btn">Keluar</button>
+        </aside>
+
+        <!-- Konten Utama -->
+        <main class="content">
+            <header class="group-header">
+                <h1>Kelompok Guru</h1>
+                <p>Buat kelompok secara acak untuk kelas Anda.</p>
+            </header>
+
+            <!-- Form Randomizer -->
+            <section class="randomizer">
+                <h2>Buat Kelompok Baru</h2>
+                <form id="randomizer-form">
+                    <label for="class-select">Pilih Kelas</label>
+                    <select id="class-select" required>
+                        <option value="">Pilih Kelas</option>
+                        <option value="Kelas 10 IPA">Kelas 10 IPA</option>
+                        <option value="Kelas 11 IPA">Kelas 11 IPA</option>
+                        <option value="Kelas 12 IPA">Kelas 12 IPA</option>
+                    </select>
+
+                    <label for="group-count">Jumlah Kelompok</label>
+                    <input type="number" id="group-count" min="1" required placeholder="Masukkan jumlah kelompok">
+
+                    <button type="submit" class="randomize-btn">Acak Kelompok</button>
+                </form>
+            </section>
+
+            <!-- Daftar Kelompok -->
+            <section class="group-list">
+                <h2>Daftar Kelompok</h2>
+                <ul id="group-items">
+                    <!-- Kelompok akan dimuat secara dinamis -->
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/kelompok_guru.js"></script>
+</body>
+</html>

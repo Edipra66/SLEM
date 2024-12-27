@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Lencana - Admin</title>
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/admin_tambah_lencana.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigasi -->
+        <aside class="sidebar">
+            <div class="logo">SLEM - Admin</div>
+            <ul class="nav-list">
+                <li><a href="dashboard_admin.html">Beranda Admin</a></li>
+                <li><a href="lencana.html" class="active">Daftar Lencana</a></li>
+            </ul>
+        </aside>
+
+        <!-- Konten Utama -->
+        <main class="content">
+            <header class="admin-header">
+                <h1>Tambah Lencana Baru</h1>
+            </header>
+
+            <!-- Form Tambah Lencana -->
+            <form id="form-tambah-lencana" class="form-add-badge">
+                <label for="badge-name">Nama Lencana:</label>
+                <input type="text" id="badge-name" placeholder="Masukkan Nama Lencana" required>
+
+                <label for="badge-desc">Deskripsi Lencana:</label>
+                <textarea id="badge-desc" placeholder="Masukkan Deskripsi Lencana" required></textarea>
+
+                <label for="badge-icon">Unggah Ikon Lencana:</label>
+                <input type="file" id="badge-icon" accept="image/png, image/jpeg" required>
+
+                <button type="submit" class="submit-btn">Tambahkan Lencana</button>
+            </form>
+
+            <!-- Daftar Lencana untuk Diedit atau Dihapus -->
+            <section id="badge-list-admin" class="badge-list-admin">
+            <h2>Daftar Lencana</h2>
+            <ul id="badge-list" class="badge-list">
+            <!-- Lencana akan dimuat di sini -->
+    </ul>
+</section>
+
+        </main>
+    </div>
+
+    <script src="js/admin_tambah_lencana.js"></script>
+</body>
+</html>

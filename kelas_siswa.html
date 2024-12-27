@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelas Siswa - SLEM</title>
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/kelas_siswa.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Navigasi -->
+        <aside class="sidebar">
+            <div class="logo">SLEM</div>
+            <ul class="nav-list">
+                <li><a href="dashboard_siswa.html">Beranda</a></li>
+                <li><a href="notifikasi.html">Notifikasi</a></li>
+                <li><a href="tugas.html">Tugas</a></li>
+                <li><a href="kelompok.html">Kelompok</a></li>
+                <li><a href="kelas_siswa.html" class="active">Kelas</a></li>
+                <li><a href="pencapaian.html">Pencapaian</a></li>
+                <li><a href="profil.html">Profil</a></li>
+            </ul>
+            <button id="sign-out" class="sign-out-btn">Keluar</button>
+        </aside>
+
+        <!-- Konten Utama -->
+        <main class="content">
+            <header class="kelas-header">
+                <h1>Daftar Kelas</h1>
+                <button id="add-class-btn" class="add-class-btn">Tambah Kode Kelas</button>
+            </header>
+
+            <!-- Daftar Kelas -->
+            <section id="class-list" class="class-list">
+                <!-- Kelas akan ditampilkan di sini secara dinamis -->
+            </section>
+
+            <!-- Modal Tambah Kode Kelas -->
+            <div id="class-modal" class="modal">
+                <div class="modal-content">
+                    <h2>Masukkan Kode Kelas</h2>
+                    <form id="class-form">
+                        <input type="text" id="class-code-input" placeholder="Kode Kelas" required>
+                        <button type="submit" class="submit-btn">Tambahkan Kelas</button>
+                        <button type="button" id="close-modal" class="cancel-btn">Batal</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/kelas_siswa.js"></script>
+    <script src="js/global.js"></script>
+</body>
+</html>
