@@ -1,0 +1,130 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.content {
+    flex: 1;
+    padding: 30px;
+    background: #f9f9f9;
+    overflow-y: auto;
+}
+
+/* Header Guru Modern */
+.teacher-header {
+    background: #6A1B9A;
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+/* Foto Profil Guru */
+.teacher-photo-wrapper {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.teacher-photo-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Informasi Guru */
+.teacher-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.teacher-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.teacher-details {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 15px;
+    row-gap: 8px;
+}
+
+.teacher-details .label {
+    font-weight: bold;
+    color: #ddd;
+}
+
+.teacher-details p {
+    font-size: 1rem;
+    color: white;
+}
+
+
+/* Bar Notifikasi */
+.notification-bar {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notification-bar h2 {
+    font-size: 1.8rem;
+    color: #6A1B9A;
+    margin-bottom: 15px;
+}
+
+.notification-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.notification-list li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.notification-list li:last-child {
+    border-bottom: none;
+}
+
+/* Tombol Keluar */
+.sign-out-btn {
+    margin-top: auto;
+    background: #d9534f;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.sign-out-btn:hover {
+    background: #c9302c;
+}

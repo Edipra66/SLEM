@@ -1,0 +1,164 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.content {
+    flex: 1;
+    padding: 30px;
+    background: #f9f9f9;
+    overflow-y: auto;
+}
+
+/* Header Profil */
+.profile-header {
+    background: #6A1B9A;
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.profile-header h1 {
+    font-size: 2.5rem;
+}
+
+.profile-header p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #ddd;
+}
+
+/* Profil Guru */
+.profile-info {
+    display: flex;
+    gap: 30px;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.photo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.photo-section img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo-section button {
+    background: #6A1B9A;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.photo-section button:hover {
+    background: #8D44AD;
+}
+
+.details-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.details-section h2 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.details-section p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Sambungan Akun */
+.account-connection {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.account-connection h2 {
+    font-size: 2rem;
+    color: #6A1B9A;
+    margin-bottom: 20px;
+}
+
+.account-connection form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.account-connection label {
+    font-size: 1rem;
+    color: #555;
+}
+
+.account-connection input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.save-btn {
+    background: #6A1B9A;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.save-btn:hover {
+    background: #8D44AD;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .profile-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details-section {
+        text-align: center;
+    }
+
+    .details-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .account-connection h2 {
+        font-size: 1.8rem;
+    }
+}
